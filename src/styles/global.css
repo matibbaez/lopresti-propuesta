@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tipografía: Autoridad Clásica + Lectura Moderna */
+  --font-sans: "Inter", sans-serif;      /* Texto largo */
+  --font-serif: "Playfair Display", serif; /* Títulos Emocionales */
+  --font-heading: "Montserrat", sans-serif;
+
+  /* PALETA LO PRESTI (Dark Authority) */
+  --color-brand-dark: #020617; /* Slate 950 - Base profunda */
+  --color-brand-primary: #0f172a; /* Slate 900 - Para tarjetas/secciones */
+  
+  --color-accent: #2563eb; /* Blue 600 - Azul Eléctrico (Acción) */
+  --color-accent-hover: #1d4ed8; /* Blue 700 */
+  
+  --color-text-main: #f8fafc; /* Blanco Humo */
+  --color-text-muted: #94a3b8; /* Gris Acero */
+  
+  --color-bg-light: #ffffff;
+}

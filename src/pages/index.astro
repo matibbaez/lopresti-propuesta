@@ -1,0 +1,532 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Stats from '../components/Stats.astro'; // Reutilizá el de stats, ajustalo a azul si querés
+import FAQItem from '../components/FAQItem.astro';
+---
+
+<Layout title="Lo Presti & Abogados Asociados">
+    
+    <Navbar />
+
+    <header id="inicio" class="relative pt-44 lg:pt-60 pb-32 bg-brand-dark text-white overflow-hidden">
+        
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            
+            <div class="space-y-10 animate-fade-in-up">
+                
+                <div class="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
+                    <span class="text-blue-400 text-lg">✓</span>
+                    <span class="text-xs font-heading font-bold text-slate-300 uppercase tracking-widest">
+                        Instagram Verificado (+3k)
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight">
+                    Expertos en <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                        Litigios y Seguros.
+                    </span>
+                </h1>
+                
+                <p class="text-slate-400 text-lg leading-relaxed max-w-lg border-l-4 border-accent pl-6 font-light">
+                    Gestionamos su reclamo de principio a fin. Desde la mediación administrativa hasta la instancia judicial.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    
+                    <a href="https://wa.me/54911XXXXXXXX" class="bg-white text-brand-dark px-8 py-4 rounded-sm font-heading font-bold text-xs uppercase tracking-[0.15em] hover:bg-blue-50 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:-translate-y-1 flex items-center gap-2">
+                        Iniciar Reclamo
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+
+                    <a href="#servicios" class="px-8 py-4 border border-slate-600 text-slate-300 rounded-sm font-heading font-bold text-xs uppercase tracking-[0.15em] hover:border-accent hover:text-white transition-all">
+                        Ver Cobertura
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="relative h-[550px] w-full rounded-sm overflow-hidden shadow-2xl border-b-4 border-accent bg-black group">
+                 <img 
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+                    alt="Edificio Corporativo" 
+                    class="w-full h-full object-cover opacity-70 hover:opacity-90 hover:scale-105 transition-all duration-1000 mix-blend-screen grayscale"
+                />
+                
+                <div class="absolute bottom-0 right-0 bg-accent p-6 shadow-lg max-w-xs text-center">
+                    <p class="text-white font-heading font-black text-3xl mb-1">4.8</p>
+                    <div class="flex justify-center text-white/80 text-xs gap-1 mb-1">★★★★★</div>
+                    <p class="text-blue-950 text-[10px] font-heading font-bold uppercase tracking-widest">Google Reviews</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section id="servicios" class="py-24 bg-bg-light relative">
+        
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20">
+                <div class="max-w-2xl">
+                    <span class="text-accent font-bold tracking-widest text-xs uppercase mb-3 block pl-1">
+                        Nuestra Cobertura
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-serif text-brand-primary font-bold leading-tight">
+                        Estrategia Legal <br> <span class="text-brand-dark">Integral.</span>
+                    </h2>
+                </div>
+                
+                <a href="#contacto" class="hidden md:inline-flex items-center gap-2 text-slate-500 hover:text-accent transition-colors text-sm font-bold uppercase tracking-widest pb-1 group border-b-2 border-transparent hover:border-accent">
+                    Solicitar Presupuesto
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-accent group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-50 rounded-md flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Accidentes de Tránsito</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Reclamos a Seguros</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Daños y Perjuicios</li>
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Lesiones Graves</li>
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Destrucción Total</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-accent font-bold text-xs uppercase tracking-widest border-b border-accent pb-1 hover:text-brand-primary transition-colors">Iniciar Reclamo →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-brand-primary group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-slate-50 rounded-md flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Despidos y ART</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Derecho Laboral</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-brand-primary font-bold">✓</span> Despidos sin Causa</li>
+                        <li class="flex items-start gap-3"><span class="text-brand-primary font-bold">✓</span> Accidentes de Trabajo</li>
+                        <li class="flex items-start gap-3"><span class="text-brand-primary font-bold">✓</span> Trabajo en Negro</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-brand-primary font-bold text-xs uppercase tracking-widest border-b border-brand-primary pb-1 hover:text-accent transition-colors">Consultar →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-brand-dark group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-slate-100 rounded-md flex items-center justify-center text-brand-dark group-hover:bg-brand-dark group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Derecho Penal</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Defensa Técnica</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-brand-dark font-bold">✓</span> Urgencias 24hs</li>
+                        <li class="flex items-start gap-3"><span class="text-brand-dark font-bold">✓</span> Excarcelaciones</li>
+                        <li class="flex items-start gap-3"><span class="text-brand-dark font-bold">✓</span> Asistencia en Comisaría</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-brand-dark font-bold text-xs uppercase tracking-widest border-b border-brand-dark pb-1 hover:text-accent transition-colors">Llamar Ahora →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-slate-400 group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-slate-50 rounded-md flex items-center justify-center text-slate-500 group-hover:bg-slate-500 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Sucesiones</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Patrimonio</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Declaratoria Herederos</li>
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Inscripción de Bienes</li>
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Tracto Abreviado</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-slate-500 font-bold text-xs uppercase tracking-widest border-b border-slate-400 pb-1 hover:text-brand-primary transition-colors">Asesorarme →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-slate-400 group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-slate-50 rounded-md flex items-center justify-center text-slate-500 group-hover:bg-slate-500 group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Familia</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Civil</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Divorcio Express</li>
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Alimentos</li>
+                        <li class="flex items-start gap-3"><span class="text-slate-400 font-bold">✓</span> Régimen de Visitas</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-slate-500 font-bold text-xs uppercase tracking-widest border-b border-slate-400 pb-1 hover:text-brand-primary transition-colors">Consultar →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 border-t-4 border-accent group hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-50 rounded-md flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-primary">Reclamos a Seguros</h3>
+                            <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Daños y Perjuicios</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Incumplimiento de Pago</li>
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Rechazo de Siniestros</li>
+                        <li class="flex items-start gap-3"><span class="text-accent font-bold">✓</span> Mediación Prejudicial</li>
+                    </ul>
+                    <a href="https://wa.me/54911XXXXXXXX" class="text-accent font-bold text-xs uppercase tracking-widest border-b border-accent pb-1 hover:text-brand-primary transition-colors">Iniciar Demanda →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-dark text-white relative overflow-hidden border-t border-white/10">
+        
+        <div class="absolute top-1/2 right-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+        
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-3 block">
+                            Nuestra Filosofía
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-white leading-tight">
+                            No aceptamos la <br> 
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">primera oferta.</span>
+                        </h2>
+                    </div>
+                    
+                    <p class="text-slate-400 text-lg leading-relaxed border-l-2 border-blue-800 pl-6">
+                        Las aseguradoras tienen equipos para pagar menos. Usted necesita un equipo experto para cobrar lo justo. Conocemos el valor real de su reclamo.
+                    </p>
+
+                    <div class="space-y-6 pt-4">
+                        
+                        <div class="flex gap-5 group">
+                            <div class="w-12 h-12 rounded-md bg-blue-900/20 border border-blue-600/30 flex items-center justify-center text-accent shrink-0 group-hover:border-accent transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1 group-hover:text-blue-300 transition-colors">Maximización del Monto</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Calculamos daño moral, lucro cesante y secuelas. No dejamos ningún rubro sin reclamar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-5 group">
+                            <div class="w-12 h-12 rounded-md bg-blue-900/20 border border-blue-600/30 flex items-center justify-center text-accent shrink-0 group-hover:border-accent transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1 group-hover:text-blue-300 transition-colors">Cobro a Resultado</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">En accidentes y laboral, nuestros honorarios están atados a su éxito. Si no gana, no paga.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative">
+                    <div class="relative h-[500px] w-full rounded-lg overflow-hidden shadow-2xl border border-white/10 bg-black group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop" 
+                            alt="Negociación Legal" 
+                            class="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-700 grayscale mix-blend-screen"
+                        />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <p class="text-white font-serif text-2xl italic mb-2">"El litigio es nuestra especialidad."</p>
+                            <div class="h-1 w-12 bg-accent mb-4"></div>
+                            <a href="https://wa.me/54911XXXXXXXX" class="text-blue-400 text-xs font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-2">
+                                Iniciar Consulta <span class="text-lg">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-accent/50 rounded-tr-xl -z-10"></div>
+                    <div class="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-accent/50 rounded-bl-xl -z-10"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-white relative overflow-hidden">
+        
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <div class="w-full lg:w-1/2 space-y-10">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-2 block">
+                            Sede Central
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-serif text-brand-dark font-bold leading-tight">
+                            Atención en el centro <br> de la ciudad.
+                        </h2>
+                    </div>
+                    
+                    <p class="text-slate-500 text-lg leading-relaxed border-l-4 border-blue-100 pl-6">
+                        Ubicados estratégicamente en la zona de Tribunales para agilizar sus trámites. Recibimos consultas presenciales con cita previa.
+                    </p>
+
+                    <div class="space-y-8 pt-2">
+                        <div class="flex items-start gap-5 group">
+                            <div class="w-12 h-12 rounded-md bg-blue-50 flex items-center justify-center text-accent shrink-0 border border-blue-100 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-lg mb-1">Oficina Comercial</h4>
+                                <p class="text-slate-500">Calle Falsa 123, Piso 5, Of. A</p>
+                                <p class="text-slate-400 text-sm uppercase tracking-wide mt-1 font-bold">CABA &bull; Zona Tribunales</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-5 group">
+                            <div class="w-12 h-12 rounded-md bg-blue-50 flex items-center justify-center text-accent shrink-0 border border-blue-100 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-lg mb-1">Horarios de Atención</h4>
+                                <p class="text-slate-500">Lunes a Viernes: 9:00 a 18:00 hs</p>
+                                <p class="text-accent text-xs font-bold uppercase tracking-widest mt-1">Urgencias 24hs (Penal)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <a href="https://wa.me/54911XXXXXXXX" class="inline-flex items-center gap-3 text-white bg-accent px-10 py-4 rounded-md font-bold uppercase tracking-widest hover:bg-brand-primary transition-all shadow-xl shadow-blue-500/20 hover:-translate-y-1 group">
+                            <span>Solicitar Reunión</span>
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <div class="relative h-[500px] w-full rounded-lg overflow-hidden shadow-2xl border border-slate-200 group bg-slate-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop" 
+                            alt="Ubicación Tribunales" 
+                            class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 transition-all duration-700"
+                        />
+                        
+                        <div class="absolute inset-0 bg-brand-primary/10 mix-blend-multiply group-hover:bg-transparent transition-colors"></div>
+
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                            <div class="relative flex items-center justify-center mb-4">
+                                <span class="animate-ping absolute inline-flex h-16 w-16 rounded-full bg-accent opacity-50"></span>
+                                <div class="relative w-12 h-12 bg-brand-dark text-white flex items-center justify-center rounded-full shadow-2xl border-4 border-white">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white px-6 py-3 rounded-sm shadow-lg border-l-4 border-accent">
+                                <p class="font-serif font-bold text-brand-dark text-lg">Lo Presti</p>
+                            </div>
+                        </div>
+
+                        <a href="https://goo.gl/maps/..." target="_blank" class="absolute inset-0 z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-brand-dark/60 backdrop-blur-[2px]">
+                            <span class="bg-white text-brand-dark px-8 py-3 rounded-sm font-bold uppercase tracking-widest shadow-2xl hover:bg-accent hover:text-white transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300">
+                                Abrir Google Maps
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-dark relative overflow-hidden border-t border-white/10">
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm mb-6">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)"><path fill="#4285F4" d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"/><path fill="#34A853" d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"/><path fill="#FBBC05" d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"/><path fill="#EA4335" d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.799 L -6.734 42.379 C -8.804 40.449 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"/></g></svg>
+                    <span class="text-xs font-bold text-slate-300 uppercase tracking-widest">
+                        Calificación: 4.8 / 5.0
+                    </span>
+                </div>
+                
+                <h2 class="text-3xl md:text-5xl font-serif text-white mb-6 font-bold">
+                    Resultados que hablan.
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto font-light">
+                    No prometemos, cumplimos. La opinión de nuestros clientes es nuestra mejor garantía contra las aseguradoras.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="group bg-[#0f172a] p-8 border border-white/10 hover:border-accent transition-all duration-300 rounded-sm hover:bg-[#151e2e] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-accent transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                    
+                    <div class="flex text-accent text-sm mb-4">★★★★★</div>
+                    <p class="text-slate-300 italic leading-relaxed mb-6 text-sm">
+                        "Excelente gestión. La aseguradora me daba vueltas para pagar la destrucción total. El estudio intervino y cobré el valor real de mercado en menos tiempo del esperado."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <span class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-xs">F</span>
+                        <div>
+                            <p class="text-white font-bold text-xs uppercase tracking-wider">Facundo M.</p>
+                            <p class="text-[10px] text-slate-500">Reclamo Seguro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-[#0f172a] p-8 border border-white/10 hover:border-accent transition-all duration-300 rounded-sm hover:bg-[#151e2e] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-accent transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                    
+                    <div class="flex text-accent text-sm mb-4">★★★★★</div>
+                    <p class="text-slate-300 italic leading-relaxed mb-6 text-sm">
+                        "Muy profesionales. Me asesoraron por un accidente de trabajo (ART) y me consiguieron una indemnización justa por mi incapacidad. Siempre claros y atentos."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <span class="w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold text-xs">L</span>
+                        <div>
+                            <p class="text-white font-bold text-xs uppercase tracking-wider">Lucía R.</p>
+                            <p class="text-[10px] text-slate-500">Juicio Laboral</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-[#0f172a] p-8 border border-white/10 hover:border-accent transition-all duration-300 rounded-sm hover:bg-[#151e2e] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-accent transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                    
+                    <div class="flex text-accent text-sm mb-4">★★★★★</div>
+                    <p class="text-slate-300 italic leading-relaxed mb-6 text-sm">
+                        "Recomendables 100%. Me resolvieron un tema de daños y perjuicios con mucha eficiencia. Lo que más valoro es que siempre me atendieron el teléfono."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <span class="w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold text-xs">R</span>
+                        <div>
+                            <p class="text-white font-bold text-xs uppercase tracking-wider">Roberto S.</p>
+                            <p class="text-[10px] text-slate-500">Litigio Civil</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#" target="_blank" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.2em] border-b border-slate-700 hover:border-white pb-1 group">
+                    Ver las 21 reseñas en Maps
+                    <svg class="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-brand-dark text-slate-400 border-t-4 border-accent font-sans text-sm relative overflow-hidden">
+        
+        <div class="absolute bottom-0 left-0 w-full h-64 bg-accent/10 blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                
+                <div class="space-y-5">
+                    <div>
+                        <h3 class="font-serif text-3xl text-white font-black tracking-wide">LO PRESTI</h3>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mt-1">& Abogados Asociados</p>
+                    </div>
+                    <p class="text-slate-500 leading-relaxed text-sm border-l-2 border-blue-900 pl-4">
+                        Especialistas en litigios contra aseguradoras y defensa civil. Recuperamos el valor real de su reclamo.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-blue-900 pb-2 inline-block">
+                        Reclamos y Seguros
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Accidentes de Tránsito</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Daños y Perjuicios</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Reclamos a Terceros</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Incumplimiento de Pago</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-blue-900 pb-2 inline-block">
+                        Práctica General
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Despidos y Laboral</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Sucesiones</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Divorcios</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Contratos Civiles</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-blue-900 pb-2 inline-block">
+                        Oficinas
+                    </h4>
+                    <ul class="space-y-5">
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-blue-500 font-bold block mb-1">Consultas WhatsApp</span>
+                            <a href="https://wa.me/54911XXXXXXXX" class="text-xl text-white font-black hover:text-accent transition-colors tracking-wide block">
+                                11 XXXX-XXXX
+                            </a>
+                        </li>
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-blue-500 font-bold block mb-1">Dirección</span>
+                            <span class="block text-slate-300">Calle Falsa 123, Piso 5</span>
+                            <span class="text-slate-500 text-xs uppercase">Zona Tribunales</span>
+                        </li>
+                        <li>
+                            <a href="mailto:info@estudiolopresti.com" class="hover:text-white transition-colors border-b border-blue-900 pb-0.5 text-sm">
+                                info@estudiolopresti.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-950 pt-8 mt-12 flex flex-col md:flex-row justify-between text-[10px] text-slate-600 uppercase tracking-widest">
+                <p>&copy; 2025 Estudio Lo Presti. Todos los derechos reservados.</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <span>Litigios</span>
+                    <span class="text-blue-900">|</span>
+                    <span>Mediaciones</span>
+                    <span class="text-blue-900">|</span>
+                    <span>Asesoría</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </Layout>
